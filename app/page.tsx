@@ -54,7 +54,7 @@ export default function Home() {
 }, []);
   useEffect(() => {
   const timer = setInterval(() => {
-    setNow(now());
+    setNow(Date.now());
   }, 60000);
 
   return () => clearInterval(timer);
